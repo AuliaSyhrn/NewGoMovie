@@ -135,15 +135,3 @@ public class MainActivity extends AppCompatActivity {
 
 }
 
-//pushpush
-
-//testing pull up
-
-//testtttttt
-
-
-//coba2 lagi
-
-//bbb
-
-//vobq
