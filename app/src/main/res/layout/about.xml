@@ -44,7 +44,7 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="329dp"
         android:layout_marginEnd="38dp"
-        android:text="@string/gomovie_adalah_aplikasi_yang_menyediakan_layanan_untuk_melihat_daftar_film_yang_sedang_popular_saat_ini_pengguna_juga_bisa_mencari_info_mengenai_film_yang_diinginkan_dengan_menggunakan_fitur_kolom_pencarian_menyimpan_fil_favorit_ke_laman_favorit_dan_melihat_history_penggunaan_aplikasi"
+        android:text="@string/text_gomovie_about"
         android:textAlignment="center" />
 
     <TextView
@@ -93,7 +93,7 @@
         android:layout_marginStart="26dp"
         android:layout_marginBottom="143dp"
         android:layout_toEndOf="@+id/imageView2"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/aurel" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -104,7 +104,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="287dp"
         android:layout_marginBottom="142dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/lesa" />
 
     <TextView
         android:id="@+id/textView6"
