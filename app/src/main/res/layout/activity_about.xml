@@ -173,5 +173,19 @@
         android:text="@string/ig_lesafitriani"
         android:textSize="11sp" />
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/menu_bawah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#EAE9EC"
+            android:foregroundGravity="bottom"
+            app:menu="@menu/menu_bawah" />
+    </FrameLayout>
+
 
 </RelativeLayout>

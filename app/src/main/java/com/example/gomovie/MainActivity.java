@@ -1,5 +1,6 @@
 package com.example.gomovie;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.SearchView;
@@ -7,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.SearchManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,6 +18,7 @@ import com.example.gomovie.model.Response;
 import com.example.gomovie.model.Result;
 import com.example.gomovie.rest.ApiClient;
 import com.example.gomovie.rest.ApiInterface;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.List;
 
@@ -48,6 +51,37 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         CallRetrofit();
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.menu_bawah);
+
+        bottomNavigationView.setSelectedItemId(R.id.home);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+                    case R.id.home:
+                        return true;
+                    case  R.id.favorite:
+                        startActivity(new Intent(getApplicationContext(),
+                                favorite.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.history:
+                        startActivity(new Intent(getApplicationContext(),
+                                history.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.info:
+                        startActivity(new Intent(getApplicationContext(),
+                                about.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                }
+                return false;
+            }
+        });
+
     }
 
     private void CallRetrofit() {
