@@ -14,9 +14,9 @@
         android:icon="@drawable/favorite"
         android:title="@string/favorite" />
     <item
-        android:id="@+id/history"
-        android:icon="@drawable/history"
-        android:title="@string/history" />
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_setting"
+        android:title="@string/setting" />
     <item
         android:id="@+id/info"
         android:icon="@drawable/info"

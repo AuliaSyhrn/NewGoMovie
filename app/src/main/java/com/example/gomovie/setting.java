@@ -3,22 +3,31 @@ package com.example.gomovie;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlarmManager;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.MenuItem;
+import android.widget.CompoundButton;
+import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class history extends AppCompatActivity {
+public class setting extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_history);
+        setContentView(R.layout.activity_setting);
 
         BottomNavigationView bottomNavigationView =findViewById(R.id.menu_bawah);
 
-        bottomNavigationView.setSelectedItemId(R.id.history);
+        bottomNavigationView.setSelectedItemId(R.id.setting);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -34,7 +43,10 @@ public class history extends AppCompatActivity {
                                 favorite.class));
                         overridePendingTransition(0, 0);
                         return true;
-                    case R.id.history:
+                    case R.id.setting:
+                        startActivity(new Intent(getApplicationContext(),
+                                setting.class));
+                        overridePendingTransition(0, 0);
                         return true;
                     case R.id.info:
                         startActivity(new Intent(getApplicationContext(),
@@ -46,4 +58,8 @@ public class history extends AppCompatActivity {
             }
         });
     }
+
+
+
+
 }

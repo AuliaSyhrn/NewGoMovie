@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoMovie">
         <activity
-            android:name=".history"
+            android:name=".setting"
             android:exported="true" />
         <activity
             android:name=".favorite"
@@ -37,6 +37,12 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="false">
+        </receiver>
     </application>
 
 </manifest>

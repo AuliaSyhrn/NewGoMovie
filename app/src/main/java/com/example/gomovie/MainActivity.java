@@ -67,9 +67,9 @@ public class MainActivity extends AppCompatActivity {
                                 favorite.class));
                         overridePendingTransition(0,0);
                         return true;
-                    case R.id.history:
+                    case R.id.setting:
                         startActivity(new Intent(getApplicationContext(),
-                                history.class));
+                                setting.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.info:
@@ -81,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
     }
 
     private void CallRetrofit() {

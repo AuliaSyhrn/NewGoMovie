@@ -31,9 +31,9 @@ public class favorite extends AppCompatActivity {
                         return true;
                     case R.id.favorite:
                         return true;
-                    case R.id.history:
+                    case R.id.setting:
                         startActivity(new Intent(getApplicationContext(),
-                                history.class));
+                                setting.class));
                         overridePendingTransition(0, 0);
                         return true;
                     case R.id.info:
