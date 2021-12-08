@@ -10,12 +10,13 @@
     <string name="about_gomovie">About GoMovie</string>
     <string name="about_developer">About Developer</string>
     <string name="gomovie_1_0_0">GoMovie 1.0.0</string>
-    <string name="aulia_syahrani">Aulia Syahrani</string>
-    <string name="aurel_adelia">Aurel Adelia</string>
-    <string name="lesa_fitriani">Lesa Fitriani</string>
     <string name="ig_auliasyhrn">IG : @auliasyhrn__</string>
     <string name="ig_ureladl">IG : @aureladl</string>
     <string name="ig_lesafitriani">IG : @lesaftrani_</string>
     <string name="text_gomovie_about"> Gomovie adalah layanan dalam menyediakan daftar film yang sedang popular. Disini juga anda bisa menyimpan, mencari info, melihat riwayat serta, mencari judul film yang anda inginkan pada aplikasi ini. </string>
+    <string name="about_developers">About Developers</string>
+    <string name="aulia_syahrani">Aulia Syahrani</string>
+    <string name="aurel_adelia">Aurel Adelia</string>
+    <string name="lesa_fitriani">Lesa Fitriani</string>
 
 </resources>
